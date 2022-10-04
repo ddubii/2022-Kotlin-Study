@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.OtherFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //밑에 메뉴
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"
+                    android:elevation="10dp" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="두비"
+                            android:textAlignment="center"
+                            android:textColor="#036635"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 님"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="환영합니다! 🙌"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/b1"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/button_design"
+                            android:text="별 히스토리"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/b2"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/button_design"
+                            android:text="전자영수증"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/b3"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/button_design"
+                            android:text="나만의 메뉴"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/b4"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_row="1"
+                            android:layout_column="0"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/button_design"
+                            android:text="개인정보 관리"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/b5"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_row="1"
+                            android:layout_column="1"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/button_design"
+                            android:text="계정정보"
+                            android:textSize="12dp" />
+                    </GridLayout>
+
+                    //pay
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Pay"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_row="1"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="스타벅스 카드 등록"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="카드 교환권 등록"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="70dp"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_row="2"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="쿠폰 등록"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="70dp"
+                            android:text="쿠폰 히스토리"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                    </GridLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="#6b6b6b"/>
+
+                    //Order
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Order"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_row="1"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="장바구니"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="홀케이크 예약"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="110dp"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_row="2"
+                            android:layout_column="0"
+                            android:layout_margin="10dp"
+                            android:text="히스토리"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+                    </GridLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="#6b6b6b"/>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        //밑에 메뉴
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <TextView
+                android:id="@+id/PayTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Pay"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/pay"
+                android:textColor="#6B6B6B"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/OrderTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Order"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/drink"
+                android:textColor="#6B6B6B"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/OtherTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Other"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:drawableTop="@drawable/setting2"
+                android:textColor="#036635"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>
