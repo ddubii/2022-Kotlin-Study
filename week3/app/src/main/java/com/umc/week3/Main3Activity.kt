@@ -2,6 +2,7 @@ package com.umc.week3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.umc.week3.databinding.ActivityMain3Binding
 import com.umc.week3.fragments.Fragment1
@@ -31,5 +32,12 @@ class Main3Activity : AppCompatActivity() {
                 .replace(binding.frameFragment.id, Fragment2())
                 .commitAllowingStateLoss()
         }
+
+        supportFragmentManager
+            .setFragmentResultListener("requestKey", this) { requestKey, bundle ->
+                val result = bundle.getString("bundleKey")
+                Toast.makeText(applicationContext, result, Toast.LENGTH_LONG).show()
+            }
+
     }
 }

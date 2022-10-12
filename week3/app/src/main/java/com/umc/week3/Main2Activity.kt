@@ -16,10 +16,18 @@ class Main2Activity : AppCompatActivity() {
             binding.textview.text = intent.getStringExtra("text")
         }
 
-        binding.button.setOnClickListener {
-            val intent = Intent(this, Main3Activity::class.java)
-            startActivity(intent)
-            finish()
+        //액티비티1로
+        binding.gotoA1Btn.setOnClickListener {
+            val intentA1 = Intent(this, MainActivity::class.java)
+            intentA1.putExtra("string", "Back")
+            startActivity(intentA1)
         }
+
+        //액티비티3으로
+        binding.gotoA3Btn.setOnClickListener {
+            val intentA3 = Intent(this, Main3Activity::class.java)
+            startActivity(intentA3)
+        }
+
     }
 }

@@ -28,13 +28,26 @@
         android:textColor="#365"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/gotoA1Btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/gotoA1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="첫번째 Activity로 이동"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="#365"
+        android:elevation="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/gotoA3Btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/gotoA3Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="세번째 Activity로 이동"
