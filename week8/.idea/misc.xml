@@ -4,8 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hbkim/UMC/week8/app/src/main/res/layout/activity_main.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/hbkim/UMC/week8/app/src/main/res/layout/fav_fragment.xml" value="0.1796875" />
         <entry key="..\:/Users/hbkim/UMC/week8/app/src/main/res/layout/main_fragment.xml" value="0.24919093851132687" />
-        <entry key="..\:/Users/hbkim/UMC/week8/app/src/main/res/layout/memo_item.xml" value="0.3671875" />
+        <entry key="..\:/Users/hbkim/UMC/week8/app/src/main/res/layout/memo_item.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/hbkim/UMC/week8/app/src/main/res/layout/write_fragment.xml" value="0.25" />
       </map>
     </option>

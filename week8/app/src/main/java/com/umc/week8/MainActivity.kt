@@ -1,6 +1,4 @@
 package com.umc.week8
-
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import com.umc.week8.databinding.ActivityMainBinding
@@ -9,6 +7,7 @@ class MainActivity : FragmentActivity() {
     private val binding: ActivityMainBinding by lazy {
     ActivityMainBinding.inflate(layoutInflater)
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -17,8 +16,8 @@ class MainActivity : FragmentActivity() {
             .beginTransaction()
             .replace(binding.containerLayout.id, MainFragment())
             .commitAllowingStateLoss()
-
     }
+
     fun changeFragment(index: Int){
         when(index){
             1 -> {
@@ -32,6 +31,13 @@ class MainActivity : FragmentActivity() {
                 supportFragmentManager
                     .beginTransaction()
                     .replace(binding.containerLayout.id, WriteFragment())
+                    .commit()
+            }
+
+            3 -> {
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(binding.containerLayout.id, FavFragment())
                     .commit()
             }
         }

@@ -40,6 +40,7 @@ class WriteFragment : Fragment() {
             mActivity?.changeFragment(1)
         }
 
+
         return binding.root
     }
 

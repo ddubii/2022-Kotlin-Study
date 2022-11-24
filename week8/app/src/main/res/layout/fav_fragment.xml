@@ -12,38 +12,37 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/myFavBtn"
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_margin="20dp"
-                android:text="즐겨찾기 목록"
+                android:gravity="center"
                 android:background="#8977ad"
-                app:layout_constraintBottom_toTopOf="@+id/writeBtn"
+                android:textStyle="bold"
+                android:text="즐겨찾기 목록"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <Button
-                android:id="@+id/writeBtn"
+                android:id="@+id/goBackBtn"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_margin="20dp"
-                android:text="새로운 메모 작성하기"
+                android:text="목록으로 돌아가기"
                 android:background="#8977ad"
-                app:layout_constraintBottom_toTopOf="@+id/memoListView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/myFavBtn"/>
+                app:layout_constraintTop_toBottomOf="@+id/textview"
+                app:layout_constraintBottom_toTopOf="@+id/favListView" />
 
             <ListView
-                android:id="@+id/memoListView"
+                android:id="@+id/favListView"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/writeBtn"/>
+                app:layout_constraintTop_toBottomOf="@+id/goBackBtn" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -19,6 +19,6 @@ interface MemoDao {
  fun selectAll() : MutableList<Memo>
 
  @Query("SELECT * FROM MEMO WHERE memoId = :memoId")
- fun selectByMemoId(memoId: Int): Memo
+ fun selectByMemoId(memoId: Int): MutableList<Memo>
 
 }

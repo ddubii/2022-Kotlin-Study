@@ -5,6 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import android.widget.Toast
+import android.widget.Toast.makeText
 
 class MemoListRVAdapter(val memoList : MutableList<Memo>) : BaseAdapter() {
 
@@ -20,25 +22,21 @@ class MemoListRVAdapter(val memoList : MutableList<Memo>) : BaseAdapter() {
         return position.toLong()
     }
 
+
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
         var view = convertView
 
         if (view == null) {
-
             view = LayoutInflater.from(parent?.context)
                 .inflate(R.layout.memo_item, parent, false)
-
         }
 
         val title = view?.findViewById<TextView>(R.id.titleArea)
         val content = view?.findViewById<TextView>(R.id.contentArea)
 
-
-
         title!!.text = memoList[position].title
         content!!.text = memoList[position].content
-
 
         return view!!
     }
